@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap");
+
+:root {
+  --text-color: #dad7cd;
+  --textbox-bg: #588157;
+  --bg-color: #344e41ff;
+  --border-color: #22223b;
+  --second-border-color: #88d4ab;
+  --button-bg: #a3b18a;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "IBM Plex Sans Thai Looped", sans-serif;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-section {
+  margin: 0 auto;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.task-input-section {
+  display: inline-block;
+  width: 100%;
+}
+
+.text-input-area {
+  padding: 12px;
+  width: 30%;
+  border-radius: 1rem;
+  border: 3px solid var(--border-color);
+  background-color: var(--textbox-bg);
+  font-weight: 300;
+}
+
+.text-input-area:focus {
+  border: 3px solid var(--second-border-color);
+}
+
+.text-input-area::placeholder {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: cursive;
+  font-weight: 400;
+  text-decoration-color: var(--text-color);
+}
+
+.task-input-button {
+  margin-left: 2%;
+  background: var(--button-bg);
+  border-radius: 2rem;
+  border: 3px solid var(--border-color);
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px;
+  text-align: center;
+  transition: all 250ms ease;
+  font-size: 1rem;
+}
+
+.task-input-button:hover {
+  transform: scale(1.04) rotate(3deg);
+  color: var(--text-color);
+  background: transparent;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.list-section {
+  margin: 0 auto;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  display: ;
+}
+
+.task-list-header {
+  display: inline-block;
+  flex-direction: row;
+}
